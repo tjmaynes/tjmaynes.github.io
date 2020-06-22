@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>TJ Maynes</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="TJ Maynes - Software Developer | Entrepreneur">
+    <meta name="description" content="TJ Maynes - Sr. Software Developer">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/fontawesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/brands.min.css">
     <style>
@@ -34,25 +34,11 @@ time, mark, audio, video {
 }
 
 body {
+  font-family: Georgia, arial;
   background-color: #fbfbfb;
   color: #0e0e0e;
-}
-
-.featured {
-  width: 98%;
-  border: 5px solid #000;
-}
-
-a, a:hover {
-  text-decoration: none;
-  font-weight: bold;
-  color: #000;
-}
-
-.wrapper {
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 24px 18px;
+  font-size: 1.1em;
+  line-height: 1.2em;
 }
 
 header, footer {
@@ -63,8 +49,61 @@ section {
   margin: 2.5em 2.3em 3.4em 2.5em;
 }
 
+p {
+  text-align: justify;
+}
+
+a, a:hover {
+  text-decoration: none;
+  font-weight: bold;
+  color: #000;
+}
+
+nav {
+  padding: 8px 0;
+}
+
+.wrapper {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 24px 18px;
+}
+
+.featured {
+  width: 98%;
+  border: 5px solid #000;
+}
+
+.about {
+  padding: 20px 6px;
+}
+
+.about h2 {
+  padding: 10px 0;
+  font-weight: bold;
+  font-size: 1.3em; 
+}
+
+.about p {
+  padding-bottom: 10px;
+}
+
 .about a, .about a:hover {
   font-weight: bold;
+}
+
+.about ul {
+  display: flex;
+  flex-flow: row wrap;
+  padding-left: 26px;
+}
+
+.about ul li {
+  padding-bottom: 10px;
+}
+
+.about ul li:last-child {
+  padding-bottom: 0;
 }
 
 .social {
@@ -79,31 +118,37 @@ section {
 }
 
 .social ul li {
-  padding: 24px 18px;
+  padding: 0px 18px;
   font-size: 1.5em;
 }
 
-  @media only screen and (max-width: 600px) {
-    .wrapper {
-      padding: 8px 0;
-    }
+      @media only screen and (max-width: 600px) {
+        .wrapper {
+          padding: 8px 0;
+        }
 
-    section {
-      margin: 1.5em;
-    }
-
-    .social ul li {
-      padding: 18px 12px;
-      font-size: 1.2em;
-    }
-  }
+        section {
+          margin: 1.5em;
+        }
+      }
     </style>
   </head>
   <body>
     <div class="wrapper">
       <section>
+        <img class="featured" src="/public/images/1.jpg" alt="1">
         <article class="about">
-          <img class="featured" src="/public/images/1.jpg" alt="1">
+          <p>Hi, my name is TJ Maynes and I’m a Senior Software Developer at VMware Pivotal Labs. Currently, spending more time with Kubernetes and making patches with softsynths.</p>
+          <h2>Expertise</h2>
+          <nav>
+            <ul>
+              <li>Built software on many different agile software teams and projects using tools and frameworks like Typescript, React, Spring Boot, Python, Swift and HTML/CSS.</li>
+              <li>Test-driven development, pair programming and implementing inclusive mob programming sessions.</li>
+              <li>Automated testing strategies, such as end-to-end, integration and unit tests using tools like CypressJS, Jest, and Spring testing framework.</li>
+              <li>Automating software delivery using tools like git, GNU Make, Bash scripts, Docker and Kubernetes.</li>
+              <li>Strangling legacy systems, object-oriented and functional programming patterns, and finding metrics to drive technical decisions.</li>
+            </ul>
+          </nav>
           <nav class="social">
             <ul>
               <li><a href="https://github.com/tjmaynes"><i class="fab fa-github" aria-hidden="true"></i></a></li>
